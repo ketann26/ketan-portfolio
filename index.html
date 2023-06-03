@@ -14,9 +14,9 @@
         <div class="navbar">
             <div class="logo">ks</div>
             <div class="navbuttons-container">
-                <div class="navbuttons">About Me</div>
-                <div class="navbuttons">Services</div>
-                <div class="navbuttons">Contact</div>
+                <div class="navbuttons"><a href="#about-me">About Me</a></div>
+                <div class="navbuttons"><a href="#services">Services</a></div>
+                <div class="navbuttons"><a href="#contact">Contact</a></div>
             </div>
         </div>
 
@@ -24,14 +24,14 @@
             <div class="intro-container">
                 <div class="intro-head">Hi, I am <br>Ketan Sharma</div>
                 <div class="intro-text">Software Developer</div>
-                <button type="button" class="button">Download CV</button>
+                <button type="button" class="button"><a href="https://drive.google.com/file/d/1OVC-_9o-stT8wgmBBRUk5zlxRMxZEoPO/view?usp=drive_link" download target="_blank">Download CV</a></button>
             </div>
             <div class="image-container">
                 <img src="static\ketan.png">
             </div>
         </div>
 
-        <div class="content-container">
+        <div class="content-container" id="about-me">
             <div class="about-head">About</div>
             <div class="about-text">I am Ketan, a Senior (4th Year) Student at NIT, Hamirpur and an aspiring developer. With a knack for data 
                 organisation and analysis along with a profound interest in mathematical modeling and statistics, I ended up exploring the 
@@ -59,7 +59,7 @@
             </div>
         </div>
 
-        <div class="content-container">
+        <div class="content-container" id="services">
             <div class="about-head">What I Do</div>
             <div class="services-container">
                 <div class="services-box">
@@ -105,7 +105,7 @@
             
         </div>
 
-        <div class="content-container">
+        <div class="content-container" id="contact">
             <div class="about-head" style="margin-top:200px;">Get in Touch</div>
 
             <div class="form-container">
@@ -130,6 +130,6 @@
             
         </div>
 
-
+        <script src="script.js"></script>
     </body>
 </html>
