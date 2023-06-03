@@ -3,8 +3,27 @@ body {
 }
 
 img{
-    max-width: 600px;
+    max-width: 100%;
     height: auto;
+}
+
+input[type="text"]{
+
+    width: 100%;
+    background-color: #171717;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid #4f4f4f;
+    color: #FFFFFF;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    background-color: #171717;
+    padding: 10px 10px;
+    border: 1px solid #4f4f4f;
+    color: #FFFFFF;
 }
 
 .navbar {
@@ -72,6 +91,7 @@ img{
 .image-container{
     overflow: hidden;
     padding: 45px;
+    width: 600px;
 }
 
 .button{
@@ -91,9 +111,7 @@ img{
     font-style: normal;
     text-align: center;
     align-items: center;
-    margin: 60px 98px 100px 128px;
-
-    
+    margin: 60px 98px 100px 128px;   
 }
 
 .about-head{
@@ -170,6 +188,32 @@ img{
     line-height: 31px;
     color: #27AE60;
 }
+
+.form-container{
+    margin: 83px 215px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #4f4f4f;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.names{
+    display: flex;
+    gap: 19px;
+    margin-bottom: 47px;
+    width: 100%; 
+}
+
+#submit-btn{
+    width: 20%;
+}
+
 
 
 
