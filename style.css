@@ -3,9 +3,10 @@ body {
 
 }
 
-img{
-    max-width: 100%;
+#ketan{
+    width: 100%;
     height: auto;
+    min-width: 150px;
 }
 
 input[type="text"]{
@@ -46,11 +47,12 @@ a:hover {
 }
 
 .navbar {
-    margin: 10px 80px;
+    margin: 1.4% 6.25%;              /* 1280 x 720 */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* overflow-x: auto; */
+    overflow-x: auto;
+
 }
 
 .logo {
@@ -65,6 +67,8 @@ a:hover {
 .navbuttons-container{
     display: flex;
     gap: 40px;
+
+   
     
 }
 
@@ -82,54 +86,54 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 98px 10px 128px;
+    margin: 2.8% 7.65% 1.4% 10%;     /* Container Width - 1054px */
     
 
-    border: 1px solid red;
+   
 }
 
 .intro-container{
     font-family: 'DM Sans';
     font-style: normal;
 
-    border: 1px solid red;
+   
 }
 
 .intro-head{
     font-weight: 700;
-    font-size: 48px;
-    line-height: 62px;
+    font-size: 3.75vw;
+    line-height: 4.8vw;
     margin: 5px 0px;
-    letter-spacing: 2px;
+    letter-spacing: 0.15vw;
     color: #FFFFFF;
 }
 
 .intro-text{
     font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.4vw;
+    line-height: 1.8vw;
     margin: 5px 0px;
     color: #828282;
 }
 
 .image-container{
     overflow: hidden;
-    padding: 45px;
-    width: 600px;
+    padding: 7.75%;
+    width: 55%;                 /* 580px */
 
-    border: 1px solid red;
+   
 }
 
 .button{
     background-color: #27AE60;
     border: none;
     color: white;
-    padding: 12px 27px;
-    margin: 25px 0px;
+    padding: 4.3% 7.3%;
+    margin: 8.97% 0%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 1.1vw;
 }
 
 .button:hover{
@@ -146,7 +150,9 @@ a:hover {
     font-style: normal;
     text-align: center;
     align-items: center;
-    margin: 60px 98px 100px 128px;   
+    margin: 8.3% 7.65% 13.8% 10%;    /*60px 98px 100px 128px*/
+    
+    border: 1px solid red;
 }
 
 .about-head{
@@ -161,7 +167,7 @@ a:hover {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    margin: 30px 250px;
+    margin: 30px 23.7%;
     color: #FFFFFF;
 }
 
@@ -171,6 +177,8 @@ a:hover {
     justify-content: space-around;
     margin: 90px 100px 50px 100px;
     padding: 5px; 
+
+    border: 1px solid red;
 }
 
 .about-button{
@@ -251,7 +259,14 @@ a:hover {
     width: 20%;
 }
 
-@media only screen and (max-width: 415px) {
+/* @media only screen and (max-width: 990px){
+    
+    .container{
+        justify-content: space-around;
+    }
+} */
+
+@media only screen and (max-width: 440px) {
 
     .navbar{
         margin: 10px 40px;
@@ -262,13 +277,129 @@ a:hover {
     }
 
     .container{
-        margin: 20px 50px 10px 60px;
         justify-content: space-around;
+        margin: 2.8% 7.65% 1.4% 5%;
+    }
+
+    .intro-head{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 55px;
+        margin: 5px 0px;
+        letter-spacing: 1.5px;
+    }
+
+    .intro-text{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        margin: 5px 0px;
+    }
+
+    .button{
+        padding: 12px 27px;
+        margin: 10px 0px;
+        font-size: 14px;
+        line-height: 18.23px;
+    }
+
+    .image-container{
+        padding: 30px;
+        width: 350px;                 /* 580px */
+    }
+
+    .content-container{
+        margin: 20px;
+    }
+
+    .about-head{
+        font-size: 40px;
+        line-height: 55pxpx;
     }
 
     .about-text{
-        margin: 30px 100px;
+        font-size: 16px;
+        line-height: 18px;
+        margin: 20px 40px;
+    } 
+    
+    .about-buttons-container{
+        margin: 60px 20px;
+        padding: 5px; 
+    
+        border: 1px solid red;
     }
+    
+    .about-button{
+        border-radius: 40px;
+        width: 250px;
+        height: 70px;
+        margin: 5px 0px;
+    }
+    
+    .about-button-text{
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        padding-top: 10px;
+    }
+
+    .services-container{
+
+        margin: 50px 20px;
+        border: 1px solid red;
+    }
+    
+    .services-box{
+        width: 300px;
+        height: 200px;
+        margin: 5px 0px;
+        padding: 25px 20px 25px 40px;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .skills-container{
+        flex-direction: column;
+        margin: 50px 55px 50px 55px;
+        padding: 30px 0px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+        
+        border: 1px solid red;
+    }
+
+    .skill-item{
+        margin: 10px 0px;
+    }
+
+    .form-container{
+        margin: 45px 20px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+    
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .names{
+        display: flex;
+        gap: 15px;
+        margin-bottom: 25px;
+        width: 100%; 
+    }
+    
+    #submit-btn{
+        width: auto;
+    }
+
 
     
 }
