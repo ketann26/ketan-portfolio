@@ -1,5 +1,6 @@
 body {
     background-color: #171717;
+
 }
 
 img{
@@ -49,6 +50,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* overflow-x: auto; */
 }
 
 .logo {
@@ -62,9 +64,8 @@ a:hover {
 
 .navbuttons-container{
     display: flex;
-    justify-content: space-between;
-    row-gap: 10px;
-    width: 25%; 
+    gap: 40px;
+    
 }
 
 .navbuttons{
@@ -78,15 +79,20 @@ a:hover {
 
 .container{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 20px 98px 10px 128px;
-    row-gap: 240px;
+    
+
+    border: 1px solid red;
 }
 
 .intro-container{
     font-family: 'DM Sans';
     font-style: normal;
+
+    border: 1px solid red;
 }
 
 .intro-head{
@@ -110,6 +116,8 @@ a:hover {
     overflow: hidden;
     padding: 45px;
     width: 600px;
+
+    border: 1px solid red;
 }
 
 .button{
@@ -159,6 +167,7 @@ a:hover {
 
 .about-buttons-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 90px 100px 50px 100px;
     padding: 5px; 
@@ -182,6 +191,7 @@ a:hover {
 
 .services-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 100px 20px 50px 20px;
     
@@ -239,6 +249,28 @@ a:hover {
 
 #submit-btn{
     width: 20%;
+}
+
+@media only screen and (max-width: 415px) {
+
+    .navbar{
+        margin: 10px 40px;
+    }
+
+    .navbuttons-container{
+        display: none;
+    }
+
+    .container{
+        margin: 20px 50px 10px 60px;
+        justify-content: space-around;
+    }
+
+    .about-text{
+        margin: 30px 100px;
+    }
+
+    
 }
 
 
